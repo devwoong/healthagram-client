@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:controls="clr-namespace:healthagram.CustomView;assembly=healthagram.CustomView"
+        x:Class="healthagram.BulletinEditPage"
+        >
+	<ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="top" Orientation="Horizontal">
+                <Image x:Name="profile" HeightRequest="50.5" Source="icon.png"/>
+                    <Entry x:Name="title" Placeholder="title" HorizontalOptions="FillAndExpand"  />
+                    <Picker x:Name="noticeScope" Title="공개">
+                    </Picker>
+                    <Label Text="익명" VerticalTextAlignment="Center"/>
+                    <Switch x:Name="isAnonym" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout x:Name="content" VerticalOptions="FillAndExpand">
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout Orientation="Horizontal" HeightRequest="50.5">
+                <Image x:Name="picture" WidthRequest="50.5" Source="picture.png"/>
+                <Image x:Name="video" WidthRequest="50.5" Source="video.png"/>
+                <Grid Grid.Row="1" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="3" x:Name="Done" WidthRequest="65" VerticalOptions="FillAndExpand"  Text="Done" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

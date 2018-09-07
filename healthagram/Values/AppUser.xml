@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<User>
+    <local>
+		<id>test_id</id>
+		<name>test_author</name>
+    </local>
+    <live>
+        <id>test_id</id>
+        <name>test_author</name>
+    </live>
+</User>

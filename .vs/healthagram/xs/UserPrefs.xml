@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{6465D1F5-38CF-4AA8-9AAE-42ECF69B5C91}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="healthagram/Server/FIleUploader.cs">
+    <Files>
+      <File FileName="healthagram/healthagramPage.xaml.cs" Line="44" Column="1" />
+      <File FileName="healthagram/healthagramPage.xaml" Line="21" Column="1" />
+      <File FileName="healthagram/Server/FIleUploader.cs" Line="58" Column="13" />
+      <File FileName="healthagram/BulletinEditPage.xaml.cs" Line="110" Column="84" />
+      <File FileName="healthagram/BulletinEditPage.xaml" Line="37" Column="1" />
+      <File FileName="iOS/obj/iPhoneSimulator/Debug/healthagram.iOS.healthagramPage.xaml.g.cs" Line="30" Column="45" />
+      <File FileName="healthagram/App.xaml" Line="7" Column="1" />
+      <File FileName="healthagram/BulletinBoadTab.xaml" Line="18" Column="1" />
+      <File FileName="healthagram/BulletinContents.xaml" Line="28" Column="1" />
+      <File FileName="healthagram/MainTab.xaml" Line="23" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.healthagram.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.83C10012-EFDC-458C-B77C-C757322F7997">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.healthagram.iOS>
+  <MonoDevelop.Ide.ItemProperties.healthagram.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>

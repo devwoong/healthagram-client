@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Server>
+	<local>
+        <url>http://localhost:8000/</url>
+		<BulletinImage>bulletin/images</BulletinImage>
+        <ImageUpload>upload</ImageUpload>
+        <BulletinReg>json</BulletinReg>
+	</local>
+	<live>
+        <url>http://ec2-13-58-51-64.us-east-2.compute.amazonaws.com:8000/</url>
+        <BulletinImage>bulletin/images</BulletinImage>
+        <ImageUpload>upload</ImageUpload>
+        <BulletinReg>json</BulletinReg>
+	</live>
+</Server>
+

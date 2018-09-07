@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:healthagram" x:Class="healthagram.healthagramPage">
+
+    <StackLayout Spacing="20" Padding="20"
+                 VerticalOptions="Center">
+        <Entry Placeholder="Username" x:Name="id"
+               Text="{Binding Username}"/>
+        <Entry Placeholder="Password" x:Name="password"
+               Text="{Binding Password}"
+               IsPassword="true"/>
+        <Button Text="Login" TextColor="White" x:Name="login"
+                BackgroundColor="#77D065"
+                Command="{Binding LoginCommand}"/>
+        <StackLayout HorizontalOptions="End" Orientation="Horizontal">
+            <Label Text="다른 아이디로 로그인" VerticalOptions="Center"/>
+            <Image x:Name="google" Source="google.png" WidthRequest="50"/>
+            <Image x:Name="facebook" Source="facebook.png" WidthRequest="50"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

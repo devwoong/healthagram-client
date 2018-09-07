@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="healthagram.BulletinContents">
+    <ContentView.Content>
+        <StackLayout>
+            <StackLayout x:Name="top" Orientation="Horizontal">
+                <Image x:Name="profile" HeightRequest="50.5" Source="icon.png"/>
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <Label x:Name="title" Text="title"/>
+                    <Label x:Name="date" Text="date"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="by."/>
+                    <Label x:Name="author" Text="Author"/>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView Orientation="Vertical">
+                <StackLayout x:Name="content" HeightRequest="400">
+                </StackLayout>
+            </ScrollView>
+            <StackLayout x:Name="bottom" HeightRequest="50.5" Orientation="Horizontal">
+                <Image x:Name="replyProfile" HeightRequest="50.5" Source="icon.png"/>
+                <Entry x:Name="reply" Placeholder="insert reply" HorizontalOptions="FillAndExpand" />
+                <Button x:Name="ok" Text="OK" />
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

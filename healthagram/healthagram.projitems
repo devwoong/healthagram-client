@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{D23AB0C7-D61E-45F0-99A7-6589962652CF}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>healthagram</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)healthagramPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainTab.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)BulletinBoadTab.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)BulletinContents.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)BulletinEditPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Values\AppValues.xml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Values\AppUser.xml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)OAuth2LoginWebPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)healthagramPage.xaml.cs">
+      <DependentUpon>healthagramPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainTab.xaml.cs">
+      <DependentUpon>MainTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Server\FIleUploader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BulletinBoadTab.xaml.cs">
+      <DependentUpon>BulletinBoadTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BulletinContents.xaml.cs">
+      <DependentUpon>BulletinContents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BulletinEditPage.xaml.cs">
+      <DependentUpon>BulletinEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ImageLoader\IImageLoader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageLoader\IImagePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomView\PlaceHolderEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomView\ExtendedEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trans\SendBulletinPacker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomView\CustomVideoView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Video\IVideoPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\SendToServerJson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utility\IXmlReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utility\AppConfigXmlReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utility\AppXmlReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utility\common\AppConfigValues.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\ReciveFromServerJson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trans\ReciveBulletinUnpacker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trans\Bulletin\BulletinInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trans\Bulletin\Bulletin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OAuth2LoginWebPage.xaml.cs">
+      <DependentUpon>OAuth2LoginWebPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Server\" />
+    <Folder Include="$(MSBuildThisFileDirectory)CustomView\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ImageLoader\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trans\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Video\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Values\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Utility\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Utility\common\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trans\Bulletin\" />
+  </ItemGroup>
+</Project>
